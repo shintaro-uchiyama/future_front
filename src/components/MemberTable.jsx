@@ -2,6 +2,12 @@ import React from "react";
 import MemberRow from "../components/MemberRow";
 
 function MemberTable({ ...props }) {
+    const rows = [];
+    props.data.members.members.forEach((member) => {
+        rows.push(
+            <MemberRow member={member} />
+        );
+    });
     return (
         <table>
             <thead>
@@ -9,12 +15,10 @@ function MemberTable({ ...props }) {
                     <th>id</th>
                     <th>name</th>
                     <th>createdAt</th>
-                    <th>updatedAt</th>
                 </tr>
             </thead>
             <tbody>
-                <MemberRow />
-                <MemberRow />
+                {rows}
             </tbody>
         </table>
     );

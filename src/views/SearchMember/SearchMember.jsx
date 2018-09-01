@@ -7,7 +7,7 @@ function SearchMember({ ...props }) {
         <div>
             <p><b>SearchMember</b></p>
             <SearchByNameBar />
-            <MemberTable />
+            <MemberTable data={props.data} />
         </div>
     );
 }
