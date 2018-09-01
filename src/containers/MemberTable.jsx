@@ -1,7 +1,7 @@
 import React from "react";
 import gql from "graphql-tag";
 import { Query } from "react-apollo";
-import SearchMemberView from "../../views/SearchMember/SearchMember";
+import MemberTable from "../components/MemberTable";
 
 const GET_MEMBERS_BY_NAME = gql`
 query Members($name: String!) {
@@ -27,7 +27,7 @@ const SearchMember = ({ ...props }) => (
             if (error) return `Error! ${error.message}`;
 
             return (
-                <SearchMemberView data={data} />
+                <MemberTable data={data} />
             );
         }}
     </Query>

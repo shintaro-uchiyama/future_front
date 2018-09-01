@@ -5,7 +5,7 @@ function MemberTable({ ...props }) {
     const rows = [];
     props.data.members.members.forEach((member) => {
         rows.push(
-            <MemberRow member={member} />
+            <MemberRow member={member} key={member.id} />
         );
     });
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 import SearchByNameBar from "../../components/SearchByNameBar";
-import MemberTable from "../../components/MemberTable";
+import MemberTable from "../../containers/MemberTable";
 
 function SearchMember({ ...props }) {
     return (

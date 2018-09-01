@@ -1,4 +1,4 @@
-import SearchMember from "../containers/SearchMember/SearchMember.jsx";
+import SearchMember from "../views/SearchMember/SearchMember.jsx";
 import RegistMember from "../views/RegistMember/RegistMember";
 
 const futureRoutes = [
