@@ -4,7 +4,7 @@ function SearchByNameBar({ ...props }) {
     return (
         <form>
             <div>
-                Name  <input type="text" />  <input type="submit" value="Search" />
+                Name  <input type="text" onChange={props.handleInputChange} />  <input type="submit" value="Search" onClick={props.handleClickSearch} />
             </div>
             <p>※PerfectMatchingOnly</p>
         </form>

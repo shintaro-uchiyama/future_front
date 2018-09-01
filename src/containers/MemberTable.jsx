@@ -21,7 +21,7 @@ query Members($name: String!) {
 `;
 
 const SearchMember = ({ ...props }) => (
-    <Query query={GET_MEMBERS_BY_NAME} variables={{ name: "testName" }}>
+    <Query query={GET_MEMBERS_BY_NAME} variables={{ name: props.name }} >
         {({ loading, error, data }) => {
             if (loading) return "Loading...";
             if (error) return `Error! ${error.message}`;
